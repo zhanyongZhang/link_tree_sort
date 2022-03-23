@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C22780C27EB47E400CCFB2E /* allen.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3C22780B27EB47E400CCFB2E /* allen.txt */; };
 		3C4E18EB27E9F6F60011B169 /* Insert.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C4E18EA27E9F6F60011B169 /* Insert.m */; };
 		3C6E868F27E40AFC0010BBB7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C6E868E27E40AFC0010BBB7 /* AppDelegate.m */; };
 		3C6E869227E40AFC0010BBB7 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C6E869127E40AFC0010BBB7 /* SceneDelegate.m */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C22780B27EB47E400CCFB2E /* allen.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = allen.txt; sourceTree = "<group>"; };
 		3C4E18E927E9F6F60011B169 /* Insert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Insert.h; sourceTree = "<group>"; };
 		3C4E18EA27E9F6F60011B169 /* Insert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Insert.m; sourceTree = "<group>"; };
 		3C6E868A27E40AFC0010BBB7 /* LinkList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinkList.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,6 +157,7 @@
 				3C6E869127E40AFC0010BBB7 /* SceneDelegate.m */,
 				3C6E869327E40AFC0010BBB7 /* ViewController.h */,
 				3C6E869427E40AFC0010BBB7 /* ViewController.m */,
+				3C22780B27EB47E400CCFB2E /* allen.txt */,
 				3C6E869627E40AFC0010BBB7 /* Main.storyboard */,
 				3C6E869927E40AFC0010BBB7 /* Assets.xcassets */,
 				3C6E869B27E40AFC0010BBB7 /* LaunchScreen.storyboard */,
@@ -245,6 +248,7 @@
 				3C6E868627E40AFC0010BBB7 /* Sources */,
 				3C6E868727E40AFC0010BBB7 /* Frameworks */,
 				3C6E868827E40AFC0010BBB7 /* Resources */,
+				3C2277F027EB413500CCFB2E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -340,6 +344,7 @@
 				3C6E869D27E40AFC0010BBB7 /* LaunchScreen.storyboard in Resources */,
 				3C6E869A27E40AFC0010BBB7 /* Assets.xcassets in Resources */,
 				3C6E869827E40AFC0010BBB7 /* Main.storyboard in Resources */,
+				3C22780C27EB47E400CCFB2E /* allen.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +363,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C2277F027EB413500CCFB2E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\nd=`git symbolic-ref HEAD 2>/dev/null | cut -d\"/\" -f 3`\necho \"$d\" > LinkList/allen.txt;\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3C6E868627E40AFC0010BBB7 /* Sources */ = {

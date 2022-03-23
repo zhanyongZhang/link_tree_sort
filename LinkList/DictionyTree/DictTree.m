@@ -25,14 +25,14 @@
 - (BOOL)isEmpty {
     return _size == 0;
 }
-- (DNode *)nodeFor:(NSString *)element {
-
-    DNode *nodel = _root;
-    for(NSInteger i = 0; i < element.length;i++) {
-        NSString *charS = [NSString stringWithFormat:@"%c",i];
-        
-    }
-}
+//- (DNode *)nodeFor:(NSString *)element {
+//
+//    DNode *nodel = _root;
+//    for(NSInteger i = 0; i < element.length;i++) {
+//        NSString *charS = [NSString stringWithFormat:@"%c",i];
+//        
+//    }
+//}
 - (void)addElenment:(NSString *)element {
     
     if(_size == 0) {

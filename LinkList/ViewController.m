@@ -21,6 +21,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSString *filepath = [[NSBundle mainBundle] pathForResource:@"allen.txt" ofType:@""];
+    NSFileManager *manger = [[NSFileManager alloc]init];
+    NSData *data = [manger contentsAtPath:filepath];
+    NSString *str = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    NSLog(@"%@",str);
     [self insertSort];
 }
 - (void)sortTest {

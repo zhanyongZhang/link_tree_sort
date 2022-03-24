@@ -9,6 +9,7 @@
 
 @interface Sort ()
 @property (nonatomic, strong) NSMutableArray *data;
+@property (nonatomic, strong) NSMutableArray *leftArr;
 @end
 
 @implementation Sort
@@ -18,6 +19,39 @@
         self.data = [data mutableCopy];
     }
     return self;
+}
+- (NSMutableArray *)leftArr {
+    if(!_leftArr) {
+        self.leftArr = [NSMutableArray array];
+    }
+    return _leftArr;
+}
+- (void)mergeSort {
+    [self dividElement:0 to:self.data.count];
+}
+- (void)dividElement:(NSInteger)begin to:(NSInteger)end {
+    if(end - begin < 2) return;
+    NSInteger mid = (end + begin) >> 1;
+    [self dividElement:begin to:mid];
+    [self dividElement:mid to:end];
+    [self merger:begin mid:mid end:end];
+}
+- (void)merger:(NSInteger)begin mid:(NSInteger)mid end:(NSInteger)end {
+    NSInteger li = 0;
+    NSInteger le = mid - begin;
+    NSInteger ri = mid;
+    NSInteger re = end;
+    NSInteger ai = begin;
+    for(NSInteger i = li;i < le;i++) {
+        self.leftArr[i] = self.data[begin + i];
+    }
+    while (li < le) {
+        if((ri < re) && ([_leftArr[li] intValue] > [_data[ri] intValue])) {
+            self.data[ai++] = self.data[ri++];
+        } else {
+            self.data[ai++] = self.leftArr[li++];
+        }
+    }
 }
 - (void)dubleSort {
     

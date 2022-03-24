@@ -10,6 +10,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Sort : NSObject
+
+- (void)mergeSort;
 - (void)selectSort;
 - (void)dubleSort;
 -(id)initWith:(NSArray *)data;

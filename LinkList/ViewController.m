@@ -23,8 +23,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog(@"git branch: %@",[Tool getContentOfname:@"gitBranch.txt"]);
-    [self DictionyTree];
+
+    [self mergerSort];
+}
+
+- (void)mergerSort {
+    Sort *sort = [[Sort alloc]initWith:@[@12,@42,@23,@20,@244,@21,@26,@2,@62]];
+    [sort mergeSort];
+    NSLog(@"%@",sort);
 }
 - (void)DictionyTree {
     DictTree *tree = [[DictTree alloc]init];

@@ -12,10 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 @interface DNode : NSObject
 @property (nonatomic, strong) NSMutableDictionary *chiren;
 @property (nonatomic, assign) BOOL isWords;
-@property (nonatomic, strong) NSString *value;
+@property (nonatomic, strong) NSString * __nullable value;
 @property (nonatomic, strong) NSString *charS;
 @property (nonatomic, strong) DNode *parent;
-+ (DNode *)node:(NSString *)value isWord:(BOOL)isWords chiren:(NSMutableDictionary *)chiren;
++ (DNode *)node:(NSString * __nullable)value isWord:(BOOL)isWords chiren:(NSMutableDictionary *)chiren;
 @end
 
 NS_ASSUME_NONNULL_END

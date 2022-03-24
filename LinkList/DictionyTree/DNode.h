@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSMutableDictionary *chiren;
 @property (nonatomic, assign) BOOL isWords;
 @property (nonatomic, strong) NSString *value;
+@property (nonatomic, strong) NSString *charS;
+@property (nonatomic, strong) DNode *parent;
 + (DNode *)node:(NSString *)value isWord:(BOOL)isWords chiren:(NSMutableDictionary *)chiren;
 @end
 

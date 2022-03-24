@@ -14,11 +14,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic,strong) DNode *root;
 @property (nonatomic, assign) NSInteger size;
-- (BOOL)containElement:(NSString *)element;
-- (void)addElenment:(NSString *)element;
+- (DNode *)get:(NSString *)key;
+- (BOOL)startWith:(NSString *)key;
+- (BOOL)containElement:(NSString *)key;
+- (void)addElenment:(NSString *)key;
 - (BOOL)isEmpty;
 - (void)clear;
-- (void)remove:(NSString *)element;
+- (void)remove:(NSString *)key;
 
 @end
 

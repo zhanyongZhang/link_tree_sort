@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3C22780C27EB47E400CCFB2E /* allen.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3C22780B27EB47E400CCFB2E /* allen.txt */; };
+		3C22780C27EB47E400CCFB2E /* gitBranch.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3C22780B27EB47E400CCFB2E /* gitBranch.txt */; };
+		3C22781927EB4CC200CCFB2E /* Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C22781827EB4CC200CCFB2E /* Tool.m */; };
 		3C4E18EB27E9F6F60011B169 /* Insert.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C4E18EA27E9F6F60011B169 /* Insert.m */; };
 		3C6E868F27E40AFC0010BBB7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C6E868E27E40AFC0010BBB7 /* AppDelegate.m */; };
 		3C6E869227E40AFC0010BBB7 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C6E869127E40AFC0010BBB7 /* SceneDelegate.m */; };
@@ -47,7 +48,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3C22780B27EB47E400CCFB2E /* allen.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = allen.txt; sourceTree = "<group>"; };
+		3C22780B27EB47E400CCFB2E /* gitBranch.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gitBranch.txt; sourceTree = "<group>"; };
+		3C22781727EB4CC200CCFB2E /* Tool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Tool.h; path = LinkList/Tool.h; sourceTree = SOURCE_ROOT; };
+		3C22781827EB4CC200CCFB2E /* Tool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Tool.m; path = LinkList/Tool.m; sourceTree = SOURCE_ROOT; };
 		3C4E18E927E9F6F60011B169 /* Insert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Insert.h; sourceTree = "<group>"; };
 		3C4E18EA27E9F6F60011B169 /* Insert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Insert.m; sourceTree = "<group>"; };
 		3C6E868A27E40AFC0010BBB7 /* LinkList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinkList.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,6 +116,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C22781627EB4CA600CCFB2E /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				3C22781727EB4CC200CCFB2E /* Tool.h */,
+				3C22781827EB4CC200CCFB2E /* Tool.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
 		3C4E18E827E9F6DF0011B169 /* Insert */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +157,7 @@
 		3C6E868C27E40AFC0010BBB7 /* LinkList */ = {
 			isa = PBXGroup;
 			children = (
+				3C22781627EB4CA600CCFB2E /* Tool */,
 				3CA478DD27EAE77400F8EA5C /* DictionyTree */,
 				3C4E18E827E9F6DF0011B169 /* Insert */,
 				3C99CDBF27E81F5C00BE4AF2 /* Heap */,
@@ -157,7 +170,7 @@
 				3C6E869127E40AFC0010BBB7 /* SceneDelegate.m */,
 				3C6E869327E40AFC0010BBB7 /* ViewController.h */,
 				3C6E869427E40AFC0010BBB7 /* ViewController.m */,
-				3C22780B27EB47E400CCFB2E /* allen.txt */,
+				3C22780B27EB47E400CCFB2E /* gitBranch.txt */,
 				3C6E869627E40AFC0010BBB7 /* Main.storyboard */,
 				3C6E869927E40AFC0010BBB7 /* Assets.xcassets */,
 				3C6E869B27E40AFC0010BBB7 /* LaunchScreen.storyboard */,
@@ -344,7 +357,7 @@
 				3C6E869D27E40AFC0010BBB7 /* LaunchScreen.storyboard in Resources */,
 				3C6E869A27E40AFC0010BBB7 /* Assets.xcassets in Resources */,
 				3C6E869827E40AFC0010BBB7 /* Main.storyboard in Resources */,
-				3C22780C27EB47E400CCFB2E /* allen.txt in Resources */,
+				3C22780C27EB47E400CCFB2E /* gitBranch.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,7 +393,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\nd=`git symbolic-ref HEAD 2>/dev/null | cut -d\"/\" -f 3`\necho \"$d\" > LinkList/allen.txt;\n\n";
+			shellScript = "#获取git分支\nd=`git symbolic-ref HEAD 2>/dev/null | cut -d\"/\" -f 3`\necho \"$d\" > LinkList/gitBranch.txt;\n\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -389,6 +402,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C22781927EB4CC200CCFB2E /* Tool.m in Sources */,
 				3C4E18EB27E9F6F60011B169 /* Insert.m in Sources */,
 				3C6E869527E40AFC0010BBB7 /* ViewController.m in Sources */,
 				3C6E86DE27E454A50010BBB7 /* BSTList.m in Sources */,

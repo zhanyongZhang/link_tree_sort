@@ -16,4 +16,7 @@
     node.chiren = chiren;
     return  node;
 }
+-(void)dealloc{
+    NSLog(@"%s",__func__);
+}
 @end

@@ -12,6 +12,8 @@
 #import "Sort.h"
 #import "HeapTreee.h"
 #import "Insert.h"
+#import "Tool.h"
+#import "DictTree.h"
 
 @interface ViewController ()
 
@@ -21,14 +23,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSString *filepath = [[NSBundle mainBundle] pathForResource:@"allen.txt" ofType:@""];
-    NSFileManager *manger = [[NSFileManager alloc]init];
-    NSData *data = [manger contentsAtPath:filepath];
-    NSString *str = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-    NSLog(@"%@",str);
-    [self insertSort];
+    NSLog(@"git branch: %@",[Tool getContentOfname:@"gitBranch.txt"]);
+    [self DictionyTree];
 }
-- (void)sortTest {
+- (void)DictionyTree {
+    DictTree *tree = [[DictTree alloc]init];
+    [tree addElenment:@"dog"];
+    [tree addElenment:@"dogg"];
+    [tree addElenment:@"car"];
+    assert([tree startWith:@"c"]);
+    [tree remove:@"dog"];
 }
 - (void)heapTree {
     HeapTreee *heap = [[HeapTreee alloc]initWith:@[] compare:^int(NSString *value1, NSString *value2) {

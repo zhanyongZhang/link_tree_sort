@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Sort : NSObject
 
+-(void)shellSort;
+-(void)quickSort;
 - (void)mergeSort;
 - (void)selectSort;
 - (void)dubleSort;

@@ -24,12 +24,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    [self mergerSort];
+    [self shellSort];
 }
-
+- (void)shellSort {
+    Sort *sort = [[Sort alloc]initWith:@[@12,@42,@23,@20,@244,@21,@26,@2,@62]];
+    [sort shellSort];
+    NSLog(@"%@",sort);
+}
 - (void)mergerSort {
     Sort *sort = [[Sort alloc]initWith:@[@12,@42,@23,@20,@244,@21,@26,@2,@62]];
     [sort mergeSort];
+    NSLog(@"%@",sort);
+}
+- (void)quickSort {
+    Sort *sort = [[Sort alloc]initWith:@[@12,@42,@23,@20,@244,@21,@26,@2,@62]];
+    [sort quickSort];
     NSLog(@"%@",sort);
 }
 - (void)DictionyTree {

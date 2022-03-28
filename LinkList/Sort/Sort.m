@@ -100,7 +100,6 @@
             if([self.data[end] intValue] > [pValue intValue]) {
                 end--;
             }else{
-                NSLog(@"---%@",self.data[end]);
                 self.data[begin++] = self.data[end];
                 break;
             }
@@ -109,7 +108,6 @@
             if([self.data[begin] intValue] < [pValue intValue]) {
                 begin++;
             }else{
-                NSLog(@"---%@",self.data[begin]);
                 self.data[end--] = self.data[begin];
                 break;;
             }

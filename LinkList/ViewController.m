@@ -14,6 +14,7 @@
 #import "Insert.h"
 #import "Tool.h"
 #import "DictTree.h"
+#import "CountSort.h"
 
 @interface ViewController ()
 
@@ -24,7 +25,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    [self shellSort];
+    [self countSort];
+}
+- (void)countSort {
+    CountSort *sort = [[CountSort alloc]sortWith:@[@9,@8,@7,@6,@2,@3,@5,@8]];
+    NSLog(@"---%@",sort);
 }
 - (void)shellSort {
     Sort *sort = [[Sort alloc]initWith:@[@12,@42,@23,@20,@244,@21,@26,@2,@62]];

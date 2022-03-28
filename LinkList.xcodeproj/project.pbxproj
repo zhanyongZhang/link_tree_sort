@@ -28,6 +28,7 @@
 		3C99CDC227E81F8D00BE4AF2 /* HeapTreee.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C99CDC127E81F8D00BE4AF2 /* HeapTreee.m */; };
 		3CA478E027EAE79A00F8EA5C /* DictTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA478DF27EAE79A00F8EA5C /* DictTree.m */; };
 		3CA478E927EAE7DD00F8EA5C /* DNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA478E827EAE7DD00F8EA5C /* DNode.m */; };
+		3CEBCF1027F1470000E487AF /* CountSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEBCF0F27F1470000E487AF /* CountSort.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,8 @@
 		3CA478DF27EAE79A00F8EA5C /* DictTree.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DictTree.m; sourceTree = "<group>"; };
 		3CA478E727EAE7DD00F8EA5C /* DNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNode.h; sourceTree = "<group>"; };
 		3CA478E827EAE7DD00F8EA5C /* DNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNode.m; sourceTree = "<group>"; };
+		3CEBCF0E27F1470000E487AF /* CountSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountSort.h; sourceTree = "<group>"; };
+		3CEBCF0F27F1470000E487AF /* CountSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountSort.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +160,7 @@
 		3C6E868C27E40AFC0010BBB7 /* LinkList */ = {
 			isa = PBXGroup;
 			children = (
+				3CEBCF0D27F146EC00E487AF /* Count */,
 				3C22781627EB4CA600CCFB2E /* Tool */,
 				3CA478DD27EAE77400F8EA5C /* DictionyTree */,
 				3C4E18E827E9F6DF0011B169 /* Insert */,
@@ -249,6 +253,15 @@
 				3CA478E827EAE7DD00F8EA5C /* DNode.m */,
 			);
 			path = DictionyTree;
+			sourceTree = "<group>";
+		};
+		3CEBCF0D27F146EC00E487AF /* Count */ = {
+			isa = PBXGroup;
+			children = (
+				3CEBCF0E27F1470000E487AF /* CountSort.h */,
+				3CEBCF0F27F1470000E487AF /* CountSort.m */,
+			);
+			path = Count;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -409,6 +422,7 @@
 				3C6E868F27E40AFC0010BBB7 /* AppDelegate.m in Sources */,
 				3C6E86A027E40AFC0010BBB7 /* main.m in Sources */,
 				3C6E869227E40AFC0010BBB7 /* SceneDelegate.m in Sources */,
+				3CEBCF1027F1470000E487AF /* CountSort.m in Sources */,
 				3C99CDB827E80BC300BE4AF2 /* Sort.m in Sources */,
 				3C6E86E427E4612B0010BBB7 /* BSTQueue.m in Sources */,
 				3CA478E927EAE7DD00F8EA5C /* DNode.m in Sources */,

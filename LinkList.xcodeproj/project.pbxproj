@@ -29,6 +29,9 @@
 		3CA478E027EAE79A00F8EA5C /* DictTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA478DF27EAE79A00F8EA5C /* DictTree.m */; };
 		3CA478E927EAE7DD00F8EA5C /* DNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA478E827EAE7DD00F8EA5C /* DNode.m */; };
 		3CEBCF1027F1470000E487AF /* CountSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEBCF0F27F1470000E487AF /* CountSort.m */; };
+		3CEBCF1427F1549600E487AF /* UionFind.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEBCF1327F1549600E487AF /* UionFind.m */; };
+		3CEBCF1727F155F400E487AF /* QuickFind.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEBCF1627F155F400E487AF /* QuickFind.m */; };
+		3CEBCF1A27F15D5500E487AF /* QuickUion.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEBCF1927F15D5500E487AF /* QuickUion.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +95,12 @@
 		3CA478E827EAE7DD00F8EA5C /* DNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNode.m; sourceTree = "<group>"; };
 		3CEBCF0E27F1470000E487AF /* CountSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountSort.h; sourceTree = "<group>"; };
 		3CEBCF0F27F1470000E487AF /* CountSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountSort.m; sourceTree = "<group>"; };
+		3CEBCF1227F1549600E487AF /* UionFind.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UionFind.h; sourceTree = "<group>"; };
+		3CEBCF1327F1549600E487AF /* UionFind.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UionFind.m; sourceTree = "<group>"; };
+		3CEBCF1527F155F400E487AF /* QuickFind.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickFind.h; sourceTree = "<group>"; };
+		3CEBCF1627F155F400E487AF /* QuickFind.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuickFind.m; sourceTree = "<group>"; };
+		3CEBCF1827F15D5500E487AF /* QuickUion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickUion.h; sourceTree = "<group>"; };
+		3CEBCF1927F15D5500E487AF /* QuickUion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuickUion.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +169,7 @@
 		3C6E868C27E40AFC0010BBB7 /* LinkList */ = {
 			isa = PBXGroup;
 			children = (
+				3CEBCF1127F1547400E487AF /* QuickUion */,
 				3CEBCF0D27F146EC00E487AF /* Count */,
 				3C22781627EB4CA600CCFB2E /* Tool */,
 				3CA478DD27EAE77400F8EA5C /* DictionyTree */,
@@ -262,6 +272,19 @@
 				3CEBCF0F27F1470000E487AF /* CountSort.m */,
 			);
 			path = Count;
+			sourceTree = "<group>";
+		};
+		3CEBCF1127F1547400E487AF /* QuickUion */ = {
+			isa = PBXGroup;
+			children = (
+				3CEBCF1227F1549600E487AF /* UionFind.h */,
+				3CEBCF1327F1549600E487AF /* UionFind.m */,
+				3CEBCF1527F155F400E487AF /* QuickFind.h */,
+				3CEBCF1627F155F400E487AF /* QuickFind.m */,
+				3CEBCF1827F15D5500E487AF /* QuickUion.h */,
+				3CEBCF1927F15D5500E487AF /* QuickUion.m */,
+			);
+			path = QuickUion;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -416,6 +439,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C22781927EB4CC200CCFB2E /* Tool.m in Sources */,
+				3CEBCF1A27F15D5500E487AF /* QuickUion.m in Sources */,
 				3C4E18EB27E9F6F60011B169 /* Insert.m in Sources */,
 				3C6E869527E40AFC0010BBB7 /* ViewController.m in Sources */,
 				3C6E86DE27E454A50010BBB7 /* BSTList.m in Sources */,
@@ -425,12 +449,14 @@
 				3CEBCF1027F1470000E487AF /* CountSort.m in Sources */,
 				3C99CDB827E80BC300BE4AF2 /* Sort.m in Sources */,
 				3C6E86E427E4612B0010BBB7 /* BSTQueue.m in Sources */,
+				3CEBCF1727F155F400E487AF /* QuickFind.m in Sources */,
 				3CA478E927EAE7DD00F8EA5C /* DNode.m in Sources */,
 				3CA478E027EAE79A00F8EA5C /* DictTree.m in Sources */,
 				3C99CDC227E81F8D00BE4AF2 /* HeapTreee.m in Sources */,
 				3C6E86C827E40B1D0010BBB7 /* LinkList.m in Sources */,
 				3C6E86CE27E40B290010BBB7 /* Node.m in Sources */,
 				3C6E86D827E454580010BBB7 /* BSTNode.m in Sources */,
+				3CEBCF1427F1549600E487AF /* UionFind.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -605,6 +631,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RPC4T53T92;
 				INFOPLIST_FILE = LinkList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -623,6 +650,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RPC4T53T92;
 				INFOPLIST_FILE = LinkList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

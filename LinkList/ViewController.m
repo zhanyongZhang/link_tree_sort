@@ -15,6 +15,8 @@
 #import "Tool.h"
 #import "DictTree.h"
 #import "CountSort.h"
+#import "QuickFind.h"
+#import "QuickUion.h"
 
 @interface ViewController ()
 
@@ -25,7 +27,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    [self countSort];
+    [self quickUion];
+}
+- (void)quickUion {
+    QuickUion *qf = [[QuickUion alloc]initWith:@[@"0",@"1",@"2",@"3",@"4",@"5",@"6",@"7"]];
+    [qf uion:@"0" other:@"1"];
+    [qf uion:@"1" other:@"2"];
+    [qf uion:@"2" other:@"3"];
+    [qf uion:@"4" other:@"5"];
+    [qf uion:@"6" other:@"7"];
+    
+    [qf uion:@"0" other:@"4"];
+    NSString *root = [qf find:@"0"];
+    NSLog(@"---%d -%@",[qf isSame:@"2" other:@"4"],root);
 }
 - (void)countSort {
     CountSort *sort = [[CountSort alloc]sortWith:@[@9,@8,@7,@6,@2,@3,@5,@8]];
